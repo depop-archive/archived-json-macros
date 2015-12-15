@@ -32,6 +32,10 @@ lazy val macroProject = project.in(file("."))
       "io.spray" %% "spray-json" % "1.3.2" % "provided",
       "org.specs2" %% "specs2-core" % "3.6.5" % "test",
       "org.specs2" %% "specs2-mock" % "3.6.5" % "test"
-    )
-  )
+    ),
+    licenses += ("Apache-2.0", url("https://www.apache.org/licenses/LICENSE-2.0.html")),
+    publishMavenStyle := false,
+    bintrayOrganization in bintray := Some(organization.value),
+    bintrayRepository in bintray := name.value
+)
 
