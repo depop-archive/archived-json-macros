@@ -2,8 +2,8 @@ import sbt.Keys._
 import de.heikoseeberger.sbtheader.license.Apache2_0
 
 headers := Map(
-  "scala" -> Apache2_0("2015", "Andrew Gustafson"),
-  "conf" -> Apache2_0("2015", "Andrew Gustafson", "#")
+  "scala" -> Apache2_0("2015", "Depop"),
+  "conf" -> Apache2_0("2015", "Depop", "#")
 )
 
 val commonSettings: Seq[Def.Setting[_]] = Seq(
