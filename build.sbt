@@ -30,6 +30,7 @@ lazy val macroProject = project.in(file("."))
     libraryDependencies ++= Seq(
       "org.scala-lang" % "scala-reflect" % scalaVersion.value,
       "io.spray" %% "spray-json" % "1.3.2" % "provided",
+      "org.json4s" %% "json4s-jackson" % "3.2.11" % "provided",
       "org.specs2" %% "specs2-core" % "3.6.5" % "test",
       "org.specs2" %% "specs2-mock" % "3.6.5" % "test"
     ),
